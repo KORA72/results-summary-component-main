@@ -1,0 +1,204 @@
+  @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&family=Goldman&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family:'Hanken Grotesk',sans-serif;
+height:100vh;
+}
+p{
+  font-size: 18px;
+}
+.container{
+  display: flex;
+  gap: 30px;
+  position: relative;
+  text-align: center;
+  margin-left: 30%;
+  margin-top: 10%;
+  width: 640px;
+  background: #fff;
+  height: 400px;
+  border-radius: 12px; 
+   filter: drop-shadow(2px 2px 10px  hsl(241, 100%, 89%));
+}
+/* Card 1 */
+.container .card1{
+  background: linear-gradient(to bottom,hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+  border-radius: 12px;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 357px;
+}
+
+.container .card1 .percentage{
+ background: linear-gradient(to bottom,hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+ padding: 50px;
+ width: 80px;
+ height: 80px;
+ border-radius: 50%;
+ margin-left:2em;
+ font-size: 14px;
+ font-weight: 200;
+ line-height: 30px;
+}
+
+.container .card1   .great{
+  font-weight: 700;
+  font-size: 18px;
+}
+.container .card1 .percentage span{
+  font-size: 40px;
+  font-weight: 700;
+}
+.container .card1 .remark{
+width: 100%;
+white-space: nowrap;
+font-size: 16px;
+}
+/* Card 2 */
+ .container .card2{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+  max-width: 400px;
+ }
+ .container .card2  .summary1{
+  margin-right: 100%;
+ }
+ul[class~=reactions]{
+  list-style: none;
+}
+
+ul[class~=reactions] li{
+  margin-top: 10px;
+}
+ul[class~=reactions] li i{
+  padding-right: 20px;
+}
+/* a */
+ul[class~=reactions] .reaction.a{
+  color: hsl(0, 100%, 67%);
+  background-color: color-mix(in srgb, hsl(0, 100%, 67%) , transparent 90%);
+  padding: 1em .2em;
+  width: 300px;
+  border-radius: 6px;
+}
+ul[class~=reactions] .reaction.a .mark{
+  padding-left: 4em;
+  color: hsl(224, 30%, 27%);
+}
+ul[class~=reactions] .reaction.a .mark1{
+  color:grey;
+}
+
+/* b */
+ul[class~=reactions] .reaction.b{
+  color: hsl(39, 100%, 56%);
+  background-color: color-mix(in srgb, hsl(39, 100%, 56%) , transparent 90%);
+  padding: 1em .2em;
+  width: 300px;
+  border-radius: 6px;
+}
+ul[class~=reactions] .reaction.b .mark{
+  padding-left: 4em;
+  color: hsl(224, 30%, 27%);
+}
+ul[class~=reactions] .reaction.b .mark1{
+  color:grey;
+}
+ /* c  */
+ ul[class~=reactions] .reaction.c{
+  color: hsl(166, 100%, 37%);
+  background-color: color-mix(in srgb,hsl(166, 100%, 37%) , transparent 90%);
+  padding: 1em .2em;
+  width: 300px;
+  border-radius: 6px;
+}
+ul[class~=reactions] .reaction.c .mark{
+  padding-left: 4em;
+  color: hsl(224, 30%, 27%);
+}
+ul[class~=reactions] .reaction.c .mark1{
+  color:grey;
+}
+
+ /* d  */
+ ul[class~=reactions] .reaction.d{
+  color:  hsl(234, 85%, 45%);
+  background-color: color-mix(in srgb, hsl(234, 85%, 45%) , transparent 90%);
+  padding: 1em .2em;
+  width: 300px;
+  border-radius: 6px;
+}
+ul[class~=reactions] .reaction.d .mark{
+  padding-left: 4em;
+  color: hsl(224, 30%, 27%);
+}
+ul[class~=reactions] .reaction.d .mark1{
+  color:grey;
+}
+
+ /* continue button  */
+.container .continue{
+  background-color: hsl(224, 30%, 27%);
+  color: #fff;
+  margin-top: 30px;
+  padding: .7em 1.5em;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 270px;
+}
+.container .continue:hover{
+  background: linear-gradient(to bottom,hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+
+.attribution {
+  margin-top: 10%;
+  font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @media screen and (max-width:1440px){
+      .container{
+        margin-left:30% ;
+      }
+      
+    }
+    @media screen and (max-width:376px){
+      .container{
+        flex-direction: column;
+        margin: unset;
+        text-align: center;
+        margin-left: unset;
+        filter: unset;
+        width: 375px;
+      }
+      .container .card1{
+        border-top-left-radius:unset ;
+        border-top-right-radius:unset ;
+       gap: 10px;
+       width: 315px;
+       border-bottom-left-radius: 15px;
+       border-bottom-right-radius: 15px;
+      }
+      .container .card1 .percentage{
+        padding: 50px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-left:4em;
+        font-size: 14px;
+        font-weight: 200;
+        line-height: 30px;
+       }
+       
+.attribution{
+  margin-top: 100%;
+}
+       
+    }
